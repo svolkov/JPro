@@ -1,9 +1,11 @@
 package serviceclasses;
 import tanks.AbstractTank;
 
+import java.io.Serializable;
 
-public class Action {
-	private AbstractTank pointer;
+
+public class Action implements Serializable{
+	private transient AbstractTank pointer;
 	private TankActions nextAct;
 	private TankActions prevTurnAct = TankActions.TURN_LEFT;
 	private boolean actionResult;

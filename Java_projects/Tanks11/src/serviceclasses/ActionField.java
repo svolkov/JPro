@@ -11,7 +11,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import javax.swing.BorderFactory;
 import javax.swing.ButtonGroup;
@@ -60,8 +59,10 @@ public class ActionField extends JPanel {
 	JMenu subMenu;
 	JRadioButtonMenuItem rbMenuItem;
 	JRadioButton rButton1, rButton2;
-
-	JPanel startPanel, gamePanel;
+    //ActionRecorder[] actionrecorders;
+    ActionTextRecorder actionRecorder;
+    ActionTextPlayer actionPlayer;
+    JPanel startPanel, gamePanel;
 	String buttonName;
 
 	public ActionField() throws Exception {
@@ -80,12 +81,11 @@ public class ActionField extends JPanel {
 		frameUI.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frameUI.setVisible(true);
 		welcomeGameUI();
-		
 	}
 
-	public void runTheGame() throws Exception {
-		Action tmp;
-        
+	public void runTheGame(boolean isReplay) throws Exception {
+		Action tmpAction;
+
 		battleField = new BattleField();
 		defender = new T34(battleField, 128, 512, Direction.UP);
 
@@ -113,32 +113,57 @@ public class ActionField extends JPanel {
 		tanksOnField[0] = defender;
 		tanksOnField[1] = aggressor;
 
-		while (true) {
-			for (AbstractTank t : tanksOnField) {
-				tmp = t.setup();
-				switch (tmp.getNextAct()) {
-				case FIRE:
-					processFire(tmp.getPointer());
-					break;
-				case MOVE:
-					processMove(tmp);
-					break;
-				case TURN_RIGHT:
-					turnRight(tmp.getPointer());
-					break;
-				case TURN_LEFT:
-					turnLeft(tmp.getPointer());
-					break;
-				}
-			}
-		}
 
+        if(isReplay){
+            actionPlayer = new ActionTextPlayer();
+            actionPlayer.init(defender);
+            while ((actionPlayer.read(defender.action))!=-1){
+                selectAction(defender.action);
+            }
+            actionPlayer.close();
+            closeGame();
+        }else {
+            actionRecorder = new ActionTextRecorder();
+            actionRecorder.init();
+
+            while (true) {
+                int i = 0;
+                for (AbstractTank t : tanksOnField) {
+                    tmpAction = t.setup();
+                    actionRecorder.record(tmpAction);
+                    selectAction(tmpAction);
+                }
+            }
+
+        }
 	}
-    private void closeGame(){
-    	frameBattle.dispose();
-    	
+    private void selectAction(Action action) throws Exception {
+
+        switch (action.getNextAct()) {
+            case FIRE:
+                processFire(action.getPointer());
+                break;
+            case MOVE:
+                processMove(action);
+                break;
+            case TURN_RIGHT:
+                turnRight(action.getPointer());
+                break;
+            case TURN_LEFT:
+                turnLeft(action.getPointer());
+                break;
+        }
     }
-	private void welcomeGameUI() {
+
+    private void closeGame(){
+        if(actionRecorder.isActive()) {
+            actionRecorder.close();
+        }
+
+        frameBattle.dispose();
+    }
+
+    private void welcomeGameUI() {
 		if(startPanel!=null){
 			frameUI.remove(startPanel);
 		}
@@ -173,7 +198,7 @@ public class ActionField extends JPanel {
 				new Thread() {
 					public void run() {
 						try {
-							runTheGame();// buttonName);
+							runTheGame(false);
 						} catch (Exception e1) {
 							// TODO Auto-generated catch block
 							e1.printStackTrace();
@@ -206,7 +231,6 @@ public class ActionField extends JPanel {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-
 				new Thread() {
 					public void run() {
 						welcomeGameUI();
@@ -217,6 +241,26 @@ public class ActionField extends JPanel {
 		startPanel.add(button2, new GridBagConstraints(1, 2, 1, 1, 0, 0,
 				GridBagConstraints.LINE_START, GridBagConstraints.NONE,
 				new Insets(0, 0, 10, 0), 0, 0));
+        JButton button3 = new JButton("Replay the Game");
+        button3.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // TODO Auto-generated method stub
+                new Thread() {
+                    public void run() {
+                        try {
+                            runTheGame(true);
+                        } catch (Exception e1) {
+                            e1.printStackTrace();
+                        }
+                    }
+                }.start();
+            }
+        });
+        startPanel.add(button3, new GridBagConstraints(1, 4, 1, 1, 0, 0,
+                GridBagConstraints.LINE_START, GridBagConstraints.NONE,
+                new Insets(0, 0, 10, 0), 0, 0));
 		frameUI.add(startPanel);
 		frameUI.pack();
         frameUI.repaint();	
@@ -267,7 +311,6 @@ public class ActionField extends JPanel {
 						return true;
 					} else {
 						if (tmpObject instanceof AbstractTank) {
-							//battleField.setFieldObject(y, x, new Land(x * 64,y * 64));
 							System.out.println("Made empty");
 							bullet.destroy();
 							processDestroy((AbstractTank) tmpObject);
@@ -287,25 +330,25 @@ public class ActionField extends JPanel {
 		return false;
 	}
 
-	public boolean checkIntersection(AbstractTank tank, int buletY, int buletX) {
-		String coordinates = getQuadrant(tank.getX(), tank.getY());
-		int separator = coordinates.indexOf("_");
-		int y = Integer.parseInt(coordinates.substring(0, separator));
-		int x = Integer.parseInt(coordinates.substring(separator + 1));
-		if (y == buletY && x == buletX) {
-			return true;
-		} else {
-			return false;
-		}
-
-	}
-
-	public void processTurn(AbstractTank tank, Direction direction)
-			throws Exception {
-		tank.setDirection(direction);
-		System.out.print("Direction" + tank.getDirection());
-		repaint();
-	}
+//	public boolean checkIntersection(AbstractTank tank, int buletY, int buletX) {
+//		String coordinates = getQuadrant(tank.getX(), tank.getY());
+//		int separator = coordinates.indexOf("_");
+//		int y = Integer.parseInt(coordinates.substring(0, separator));
+//		int x = Integer.parseInt(coordinates.substring(separator + 1));
+//		if (y == buletY && x == buletX) {
+//			return true;
+//		} else {
+//			return false;
+//		}
+//
+//	}
+//
+//	public void processTurn(AbstractTank tank, Direction direction)
+//			throws Exception {
+//		tank.setDirection(direction);
+//		System.out.print("Direction" + tank.getDirection());
+//		repaint();
+//	}
 
 	public void turnRight(AbstractTank tank) throws Exception {
 
@@ -420,7 +463,6 @@ public class ActionField extends JPanel {
 			covered += step;
 			repaint();
 			Thread.sleep(tank.getMaxSpeed());
-
 		}
 		// save the previous content of current quadrant
 		contentOfQuadrant.put(tank, battleField.getFieldObject(
@@ -440,7 +482,6 @@ public class ActionField extends JPanel {
 		while (bullet.getX() > 0 && bullet.getX() <= 576 && bullet.getY() > 0
 				&& bullet.getY() <= 576) {
 			while (covered < 64) {
-
 				if (bullet.getDirection() == Direction.UP) {
 					bullet.updateY(-step);
 					System.out.println("[move up] direction: "
@@ -463,7 +504,6 @@ public class ActionField extends JPanel {
 							+ ", bulletY: " + bullet.getY());
 				}
 				covered += step;
-
 				repaint();
 				Thread.sleep(bullet.getSpeed());
 			}
@@ -471,13 +511,12 @@ public class ActionField extends JPanel {
 			if (processInterception(bullet)) {
 				repaint();
 				Thread.sleep(bullet.getSpeed());
-
 			}
 		}
 	}
 
 	public void processDestroy(AbstractTank tank) throws Exception {
-		int[] coordinates = randomXY();
+//		int[] coordinates = randomXY();
 
 		if (tank instanceof Tiger) {
 			if (((Tiger) tank).getArmor() > 0) {
@@ -496,23 +535,23 @@ public class ActionField extends JPanel {
 		repaint();*/
 	}
 
-	public int[] randomXY() {
-
-		int[][] coordinates = new int[3][];
-		Random rand = new Random();
-		int r = rand.nextInt(3);
-		coordinates[0] = new int[2];
-		coordinates[1] = new int[2];
-		coordinates[2] = new int[2];
-		coordinates[0][0] = 512;
-		coordinates[0][1] = 512;
-		coordinates[1][0] = 64;
-		coordinates[1][1] = 64;
-		coordinates[2][0] = 256;
-		coordinates[2][1] = 256;
-
-		return coordinates[r];
-	}
+//	public int[] randomXY() {
+//
+//		int[][] coordinates = new int[3][];
+//		Random rand = new Random();
+//		int r = rand.nextInt(3);
+//		coordinates[0] = new int[2];
+//		coordinates[1] = new int[2];
+//		coordinates[2] = new int[2];
+//		coordinates[0][0] = 512;
+//		coordinates[0][1] = 512;
+//		coordinates[1][0] = 64;
+//		coordinates[1][1] = 64;
+//		coordinates[2][0] = 256;
+//		coordinates[2][1] = 256;
+//
+//		return coordinates[r];
+//	}
 
 	@Override
 	protected void paintComponent(Graphics g) {
@@ -535,7 +574,6 @@ public class ActionField extends JPanel {
 				}
 				i++;
 				g.setColor(cc);
-				// g.fillRect(h * 64, v * 64, 64, 64);
 				g.clearRect(h * 64, v * 64, 64, 64);
 			}
 		}
@@ -543,7 +581,6 @@ public class ActionField extends JPanel {
 		for (int v = 0; v < battleField.getDimentionY(); v++) {
 			for (int h = 0; h < battleField.getDimentionX(); h++) {
 				tmpObject = battleField.getFieldObject(v, h);
-				// battleField.getFieldObject(v,h).draw(g);
 				if (!(tmpObject instanceof Water)) {
 					if ((tmpObject instanceof AbstractTank)
 							&& (!(contentOfQuadrant

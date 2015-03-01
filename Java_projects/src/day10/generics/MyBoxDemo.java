@@ -1,5 +1,9 @@
 package day10.generics;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * Created by syv on 19.01.15.
  */
@@ -39,6 +43,23 @@ public class MyBoxDemo {
         box3.sortBox();
         box3.display();
 
+        List<Hammer> hammerList = new ArrayList<>();
+        List<Tool> toolList = new ArrayList<>();
+        List<Tool> toolList1 = new ArrayList<>();
+        List<Screwdriver> screwdriverList = new ArrayList<>();
+
+        hammerList.add(hammer);
+        hammerList.add(hammer);
+        hammerList.add(hammer1);
+        hammerList.add(hammer1);
+        hammerList.add(hammer2);
+        hammerList.add(hammer2);
+
+        box1.copy(hammerList,toolList);
+        System.out.println(toolList);
+
+        box3.copy(toolList,toolList1);
+        System.out.println(toolList1);
 
     }
 }

@@ -5,6 +5,7 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 //import java.io.File;
 //import java.io.IOException;
+import java.io.Serializable;
 import java.util.HashMap;
 
 //import javax.imageio.ImageIO;
@@ -15,7 +16,7 @@ import serviceclasses.BattleField;
 import serviceclasses.Direction;
 import serviceclasses.Drawable;
 
-public abstract class AbstractTank extends FieldObject implements Drawable {
+public abstract class AbstractTank extends FieldObject implements Drawable, Serializable {
 	protected Direction direction;
 	protected int speed = 10;
 	protected Color colorTank, colorTower;
@@ -23,8 +24,8 @@ public abstract class AbstractTank extends FieldObject implements Drawable {
 	int crew;
 	BattleField battle;
 	public Action action;
-//	protected String id;
-    protected HashMap<Direction,BufferedImage> imagesOfTank;
+
+    protected transient HashMap<Direction,BufferedImage> imagesOfTank;
 	
 	public AbstractTank() {
 	}
@@ -76,14 +77,7 @@ public abstract class AbstractTank extends FieldObject implements Drawable {
 	public void setSpeed(int speed) {
 		this.speed = speed;
 	}
-/*
-	public String getId() {
-		return id;
-	}
 
-	public void setId(String id) {
-		this.id = id;
-	}*/
 
 	public int getMaxSpeed() {
 		return maxSpeed;

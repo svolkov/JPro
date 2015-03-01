@@ -7,7 +7,9 @@ import fieldobjects.Land;
 import fieldobjects.Rock;
 import fieldobjects.Water;
 
-public class BattleField {
+import java.io.Serializable;
+
+public class BattleField implements Serializable{
 	private FieldObject[][] fieldOfObjects;
 	private String[][] battleField = {
 			{ "B", "B", " ", "W", "W", "R", " ", "R", " " },

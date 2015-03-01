@@ -45,6 +45,25 @@ public class MyBox <M extends Tool> {
             }
             System.out.println();
         }
-        
     }
+
+    public void copy(List<? extends Tool> src, List<Tool> dst){
+
+        if(!dst.isEmpty()){
+            dst.clear();
+        }
+        for(int i = 0; i < src.size();i++){
+            dst.add(src.get(i));
+        }
+    }
+/*
+    public void copy(List<? super Hammer> src, List<Tool> dst){
+
+        if(!dst.isEmpty()){
+            dst.clear();
+        }
+        for(int i = 0; i < src.size();i++){
+            dst.add(src.get(i));
+        }
+    }*/
 }

@@ -2,15 +2,16 @@ package fieldobjects;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
+import java.io.Serializable;
 
 import serviceclasses.Drawable;
 
 
-public class FieldObject implements Drawable{
+public class FieldObject implements Drawable, Serializable{
 	protected int x;
 	protected int y;
 	protected Color color;
-	protected BufferedImage image;
+	protected transient BufferedImage image;
 	
 	@Override
 	public void draw(Graphics g) {
