@@ -14,15 +14,11 @@ public class ActionTextRecorder {
     private File file;
     private File directory;
     private FileWriter fileWriter;
-   // private BufferedWriter bWriter;
     private Date curDate;
     private boolean active;
 
     public ActionTextRecorder(){
     }
-
-
-
 
     public void init(){
 
@@ -38,15 +34,12 @@ public class ActionTextRecorder {
                 file.createNewFile();
             }
             fileWriter = new FileWriter(file,true);
-            //bWriter = new BufferedWriter(fileWriter);
 
         } catch (IOException e) {
             try {
-                //bWriter.close();
                 fileWriter.flush();
                 fileWriter.close();
-
-                } catch (IOException e1) {
+            } catch (IOException e1) {
                 e1.printStackTrace();
             }
             e.printStackTrace();
@@ -56,15 +49,13 @@ public class ActionTextRecorder {
 
     public void record(Action act){
         try {
-           char[] actionCode = codeAction(act);//{'d','m','r','t','0'};
+           char[] actionCode = codeAction(act);
            fileWriter.write(actionCode);
-           //bWriter.write(actionCode);
         } catch (IOException e) {
             try {
-               // bWriter.close();
                 fileWriter.flush();
                 fileWriter.close();
-            } catch (IOException e1) {
+            }catch (IOException e1) {
                 e1.printStackTrace();
             }
             e.printStackTrace();
@@ -73,7 +64,6 @@ public class ActionTextRecorder {
 
     public void close(){
         try {
-            //bWriter.close();
             fileWriter.flush();
             fileWriter.close();
             setActive(false);
@@ -140,9 +130,9 @@ public class ActionTextRecorder {
 
         switch (tankAction){
             case TURN_RIGHT:result= 'R';
-                break;
+                            break;
             case TURN_LEFT :result= 'L';
-                break;
+                            break;
             default        :throw new IllegalArgumentException("Bad output code: previous turn action");
         }
         return result;

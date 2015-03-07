@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * Created by syv on 01.03.15.
  */
-public class SimpleList {
+public class SimpleList implements SimpleListOnFile{
     Path pathFileList;
     RandomAccessFile raf;
     List <NodeDescriptor> nodes;
@@ -54,6 +54,7 @@ public class SimpleList {
     public SimpleList(){
         nodes = new ArrayList<>();
         nodeIndexes = new LinkedList<>();
+        this.init();
     }
 
     public void init(){
@@ -62,7 +63,7 @@ public class SimpleList {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        pathFileList.toFile().deleteOnExit();
+        //pathFileList.toFile().deleteOnExit();
         try {
             raf = new RandomAccessFile(pathFileList.toFile(),"rw");
         } catch (FileNotFoundException e) {
@@ -138,6 +139,11 @@ public class SimpleList {
             }
         }
         System.out.println();
+    }
+
+    @Override
+    public List<String> getAll() {
+        return null;
     }
 
     public void remove(int index){
