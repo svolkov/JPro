@@ -2,67 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c993650-62ee-4802-951d-62bbb05f5da7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceclasses/Destroyable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skatingrink/src/SkatingRink.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tanks/T34.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BrownTankLeft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RedTankRight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skating/src/SkatingRink.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GreenTankRight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fieldobjects/Water.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceclasses/ActionField.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BrownTank.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skatingrink/src/Skates.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyWater1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceclasses/Launcher12.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyWater.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceclasses/TankActions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceclasses/ActionRecorder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceclasses/Direction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyBrick.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fieldobjects/FieldObject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skating/src/SkatingRinkDemo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skatingrink/src/VipSkatingRink.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyGrass.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skatingrink/src/RinkExecServDemo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceclasses/Bullet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceclasses/ActionPlayer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skatingrink/src/Skater.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fieldobjects/Brick.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceclasses/ActionTextPlayer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fieldobjects/Eagle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GreenTankLeft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceclasses/Date.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GreenTankDown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RedTankLeft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RedTankDown.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../idgenerator/src/DemoIdGen.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tanks/AbstractTank.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SmallBricks.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyStones.jpg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../idgenerator/src/IdGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceclasses/Action.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyWater1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fieldobjects/Land.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tanks/Tiger.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../idgenerator/src/DemoIdGen.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../day13_networking/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skatingrink/src/Skater.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skating/src/SkatingRink.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../day13_networking/src/UrlDownloader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skatingrink/src/RinkExecServDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../day13_networking/src/ServerNewIO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../day13_networking/src/FileDownloader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../day13_networking/day13_networking.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../day13_networking/src/Utils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skatingrink/src/SkatingRink.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skatingrink/src/RinkDemo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../day13_networking/src/SimpleServer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../day13_networking/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../day13_networking/.idea/compiler.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skating/src/Skates.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyEagle.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceclasses/Drawable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceclasses/BattleField.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MyGrass1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/serviceclasses/ActionTextRecorder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../day13_networking/.idea/workspace.xml" />
       <change type="NEW" beforePath="" afterPath="$APPLICATION_CONFIG_DIR$/options/find.recents.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GreenTank.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RedTank.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../day13_networking/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skatingrink/src/VipSkatingRink.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../day13_networking/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../day13_networking/src/UrlConnectionReader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../day13_networking/src/NastyChump.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skatingrink/src/Skates.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skating/src/SchoolSkatingRink.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tanks/BT7.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BrownTankRight.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fieldobjects/Rock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BrownTankDown.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../day13_networking/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../day13_networking/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../skating/src/SkatingRinkDemo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../stargate/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../stargate/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Tanks12.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -98,71 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActionField.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ActionField.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/serviceclasses/ActionField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4140" max-vertical-offset="10635">
+            <state vertical-scroll-proportion="-0.55166376" vertical-offset="4140" max-vertical-offset="10185">
               <caret line="299" column="20" selection-start-line="299" selection-start-column="20" selection-end-line="299" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bullet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/serviceclasses/Bullet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="134" max-vertical-offset="1305">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActionTextPlayer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/serviceclasses/ActionTextPlayer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1380" max-vertical-offset="2490">
-              <caret line="100" column="52" selection-start-line="100" selection-start-column="52" selection-end-line="100" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tiger.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tanks/Tiger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61996496" vertical-offset="2151" max-vertical-offset="2745">
-              <caret line="186" column="19" selection-start-line="186" selection-start-column="19" selection-end-line="186" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractTank.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tanks/AbstractTank.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1125">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActionTextRecorder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/serviceclasses/ActionTextRecorder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="581" max-vertical-offset="2310">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Action.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/serviceclasses/Action.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="450">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -195,8 +105,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="52" />
-    <option name="y" value="91" />
+    <option name="x" value="53" />
+    <option name="y" value="89" />
     <option name="width" value="1313" />
     <option name="height" value="715" />
   </component>
@@ -256,10 +166,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tanks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -276,20 +182,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="serviceclasses" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tanks12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Tanks12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -315,7 +207,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../day13_networking" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
   </component>
@@ -669,15 +561,24 @@
       <workItem from="1428251713977" duration="1790000" />
       <workItem from="1428253696489" duration="1262000" />
       <workItem from="1428327776460" duration="1762000" />
-      <workItem from="1428670060626" duration="81000" />
+      <workItem from="1428670060626" duration="536000" />
+      <workItem from="1429033025661" duration="849000" />
+      <workItem from="1429273010525" duration="82000" />
     </task>
+    <task id="LOCAL-00001" summary="Game &quot;Tanks&quot; with Defender's manual control.">
+      <created>1428670551039</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1428670551039</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78768000" />
+    <option name="totallyTimeSpent" value="80154000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="52" y="91" width="1313" height="715" extended-state="0" />
+    <frame x="53" y="89" width="1313" height="715" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -694,11 +595,11 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24154209" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2407553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24704957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24704957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33277592" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -724,6 +625,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Game &quot;Tanks&quot; with Defender's manual control." />
+    <option name="LAST_COMMIT_MESSAGE" value="Game &quot;Tanks&quot; with Defender's manual control." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -733,12 +636,6 @@
           <line>47</line>
           <properties />
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/serviceclasses/ActionField.java</url>
-          <line>229</line>
-          <properties />
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="13" />
@@ -1022,14 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/serviceclasses/Launcher12.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-7-oracle/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="394" max-vertical-offset="3330">
@@ -1058,26 +947,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/serviceclasses/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/serviceclasses/BattleField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="2145">
           <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tanks/AbstractTank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1125">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,10 +968,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/serviceclasses/ActionTextRecorder.java">
+    <entry file="file://$PROJECT_DIR$/src/tanks/Tiger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="581" max-vertical-offset="2310">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.61996496" vertical-offset="2151" max-vertical-offset="2745">
+          <caret line="186" column="19" selection-start-line="186" selection-start-column="19" selection-end-line="186" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1113,24 +986,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/serviceclasses/Bullet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="134" max-vertical-offset="1305">
+        <state vertical-scroll-proportion="0.18563923" vertical-offset="134" max-vertical-offset="1305">
           <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tanks/AbstractTank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.18388791" vertical-offset="180" max-vertical-offset="1125">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serviceclasses/ActionTextRecorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21716288" vertical-offset="581" max-vertical-offset="2310">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serviceclasses/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1313485" vertical-offset="0" max-vertical-offset="571">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serviceclasses/Launcher12.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/serviceclasses/ActionField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3971" max-vertical-offset="10320">
+        <state vertical-scroll-proportion="-0.55166376" vertical-offset="4140" max-vertical-offset="10185">
           <caret line="299" column="20" selection-start-line="299" selection-start-column="20" selection-end-line="299" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tanks/Tiger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61996496" vertical-offset="2151" max-vertical-offset="2745">
-          <caret line="186" column="19" selection-start-line="186" selection-start-column="19" selection-end-line="186" selection-end-column="19" />
           <folding />
         </state>
       </provider>
