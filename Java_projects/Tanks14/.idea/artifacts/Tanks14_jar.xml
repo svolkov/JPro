@@ -1,0 +1,31 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Tanks14:jar">
+    <output-path>$PROJECT_DIR$/out/production/Tanks14</output-path>
+    <root id="archive" name="Tanks14.jar">
+      <element id="module-output" name="Tanks14" />
+      <element id="directory" name="images">
+        <element id="file-copy" path="$PROJECT_DIR$/images/BrownTank.png" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/BrownTankDown.png" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/BrownTankLeft.png" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/BrownTankRight.png" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/GreenTank.png" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/GreenTankDown.png" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/GreenTankLeft.png" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/GreenTankRight.png" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/MyBrick.jpg" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/MyEagle.jpg" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/MyGrass.jpg" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/MyGrass1.jpg" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/MyStones.jpg" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/MyWater.jpg" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/MyWater1.jpg" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/MyWater1.png" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/RedTank.png" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/RedTankDown.png" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/RedTankLeft.png" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/RedTankRight.png" />
+        <element id="file-copy" path="$PROJECT_DIR$/images/SmallBricks.jpg" />
+      </element>
+    </root>
+  </artifact>
+</component>
